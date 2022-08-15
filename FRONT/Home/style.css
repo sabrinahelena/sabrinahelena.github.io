@@ -1,0 +1,173 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2E4756;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* HEADER */
+
+
+.imagem_logo{
+    width: 80px;
+    height: auto;
+}
+
+.logo_site{
+    display: flex;
+    gap: 0px;
+    padding: 0px;
+
+}
+
+.alinhamento_vertical{
+    align-items: center;
+}
+
+.alinhamento_horizontal{
+    align-content: left;
+}
+
+.figure_logo{
+    margin: 20px;
+}
+
+
+
+.opcoes{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    align-items: center;
+    justify-content: space-between;
+        padding: 0px;
+    margin-right: 20px;
+
+}
+
+.item{
+    text-decoration: none;
+    color: white;
+    margin: 40px;
+    font-weight: bold;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 0px;
+    padding: 0px;
+    align-items: center;
+    width: auto;
+    height: 90px;
+    border-bottom: 1px solid white;
+
+
+}
+
+
+/* MAIN */
+.main{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto_main{
+    width: 800px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.contate{
+    margin-top: 40px
+}
+
+.figure_main{
+    margin-right: 100px;
+}
+
+.imagem_main{
+    width: 250px;
+}
+
+
+/*GERAL*/
+.botao{
+    background-color: #16262E; 
+    border-radius: 30px;
+    border: #2E4756;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: auto;
+    height: 50px;
+    font-weight: bold;
+
+}
+
+/* SOBRE */
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.texto_sobre{
+    width: 800px;
+}
+
+/*FERRAMENTAS*/
+
+.ferramentas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 600px;
+
+}
+
+/*SUPORTE*/
+
+.suporte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 600px;
+
+}
+
+/*CONTATO*/
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 600px;
+}
+
+.contato-fale{
+    margin-left: 600px;
+}
+
+.contato_imagem{
+    margin-left: 100px;
+}
+
+
+

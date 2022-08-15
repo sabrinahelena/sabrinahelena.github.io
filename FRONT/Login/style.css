@@ -1,0 +1,47 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+
+.tela_principal{
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: 430px;
+    background-color: #2E4756;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid   black;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}
+
+.form{
+    margin-top: 100px;
+}
+
+.botao{
+    margin-top: 70px;
+    background-color: white; 
+    border-radius: 30px;
+    color: #16262E;
+    border-color: #16262E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: auto;
+    height: 50px;
+    font-weight: bold;
+}
+
+.checkbox{
+
+    margin-top: 30px;
+}
+.inputs{
+    height: 25px;
+    border-radius: 5px;
+    border-style: none;
+}
