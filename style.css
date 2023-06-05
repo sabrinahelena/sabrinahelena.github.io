@@ -1,0 +1,211 @@
+body {
+  background-color: #F4FAFF;
+  overflow-x: hidden;
+}
+
+.logo {
+  max-height: 150px;
+}
+
+#nome {
+  color: #468966;
+}
+
+.custom-bg-color {
+  background-color: #000000;
+}
+
+.mycart {
+  width: 2.7em;
+  height: 45px;
+  margin-bottom: 1.2em;
+  margin-left: .5em;
+  background-color: #468966;
+  border-radius: 5px;
+  color: #468966;
+  padding: 5px;
+}
+
+.red-text {
+  color: #000000;
+}
+
+.mycart:hover {
+  background-color: white;
+}
+
+.search-form {
+  margin-top: 0px;
+  height: 60px;
+  color: black;
+  padding-left: 400px;
+  background-color: #DAEBD2;
+}
+
+.btn-purple {
+  background-color: #8789C0; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cards {
+  max-width: 400px; 
+  height: 400px;
+}
+
+.search-input::placeholder {
+  color: black;
+  background-color: white;
+}
+
+input[type="search"] {
+  padding: 5px;
+  border: 0px solid #8789C0;
+  border-radius: 4px;
+  width: 600px;
+  background-color: #8789C0;
+  color: black;
+}
+
+button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #468966;
+  border: none;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+button[type="submit"] i {
+  color: black;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+}
+
+.search2 {
+  width: 5em;
+  height: 2em;
+  background-color: #8789C0;
+  color:#8789C0;
+}
+
+.MostReviwed {
+  width: 25%;
+  float: left;
+}
+
+.container-sabrina{
+  background-color:#8789C0;
+  border-radius: 20%;
+}
+
+.carrin {
+  padding-top: 0px;
+  padding-left: 1300px;
+  top: 100px;
+  left: 0px;
+  display: flex;
+}
+
+.custom-color {
+  color: #3E4E50;
+}
+
+.custom-color2 {
+  color: #DAEBD2;
+  font-weight: bold;
+}
+
+.custom-color3 {
+  color: #DAEBD2;
+  list-style: none;
+}
+
+.border-secondary.mt-3 {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.custom-color4 {
+  color: black;
+  font-weight: bold;
+}
+
+.list-group a {
+  text-decoration: none;
+}
+
+.card-bottles {
+  width: 10em;
+}
+
+.description-card {
+  font-size: 12px;
+}
+
+.mostreviewed-img {
+  align-items: center;
+  max-width: 200px;
+}
+
+.border-secondary.mt-3 {
+  background-color: #ffffff;
+}
+
+.input-news {
+  width: 9em;
+  height: 1.5em;
+}
+
+.carousel-item {
+  max-height: 330px;
+}
+
+.quick .most {
+  display: flex;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #8789C0;
+  margin-top: 40px;
+}
+
+.icones {
+  display: block;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8789C0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8789C0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #DAEBD2;
+}
+
+/* Media Query */
+@media only screen and (max-width: 767px) {
+  #nome {
+    display: none;
+  }
+  .logo{
+    position: center
+    ;
+  }
+  body{
+    overflow-x: hidden;}
+}

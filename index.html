@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/6bd401535f.js" crossorigin="anonymous"></script>
+    <title>Sabrina's SKIN</title>
+</head>
+
+<body>
+    <nav class="d-flex m-3">
+    <a href="#"> <img src="./img/emporio_sabrina.png" alt="Emporio sabrina"class="logo" style="border-radius: 40%;">  </a>
+      
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <p id="nome" class="fs-2 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7" style="color: #3E4E50; font-family: Brush Script MT, Brush Script Std, cursive;" ><br>Sabrina's skin</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="row ms-1 me-1">
+
+            <div id="carouselExample" class="carousel slide col-lg-9 col-md-8 col-sm-12">
+                <div class="carousel-inner">
+                    <div class="carousel-item active w-100">
+                        <img src="img/imagem-carrosel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-carrosel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-carrosel3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            
+            <aside class="lh-1 p-3 col-lg-3 col-md-4 col-sm-12 xsQuick"
+                style="background-color: #8789C0 !important; text-align: center; margin: auto; border-radius: 10%;">
+                <p class="fs-6 fw-bold text-white" style="text-align: center;">Pesquisa Rápida</p>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Skin Care')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Skin care</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Hair')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Cabelo</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Makeup')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Maquiagem</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Lips')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Lábios</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Nails')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Unhas</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Perfumes')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Perfumes</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Eyes')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Olhos</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Bath and Body')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Banho e corpo</button>
+            </aside>
+    
+        </div>
+    </section>
+    <div id="searchResultsTittle"></div>
+    <div id="searchResults" class="d-flex flex-wrap mb-5">
+
+    </div>
+    <section class="container-fluid">
+        <div class="row me-3">
+            <div class="xsBottles col-md-9 col-lg-9">
+                <h1 class="custom-color" style="font-family: Brush Script MT, Brush Script Std, cursive;">Produtos disponíveis</h1>
+                <div id="exibeProdutos" class="d-flex flex-wrap">
+
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 h-25 xsMostReviwed">
+                
+                <div class="border border-2 border-secondary mt-3">
+                    <p class="custom-color4">Produtos Mais Vistos</p>
+                    
+                    <div class="most">
+                        <img src="http://assets.myntassets.com/v1/images/style/properties/Deborah-Ultrafine-Compact-Powder-01_f0124aa76fc2b0a33571303eeb4112d6_images.jpg"
+                            class="mostreviewed-img">
+                        <div class="custom-color4">
+                            <p class="ms-2 mb-0 description-card">Deborah Ultrafine Compact Powder 01</p>
+                            <p class="ms-2 fw-bold description-card">R$595</p>
+                        </div>
+                    </div>
+                    <div class="most">
+                        <img src="http://assets.myntassets.com/v1/images/style/properties/Deborah-Orange-7-Days-Long-Nail-Polish-835_3c80a0c9a8a8650b12bbb5843270420b_images.jpg"
+                            class="mostreviewed-img">
+                        <div class="custom-color4">
+                            <p class="ms-2 mb-0 description-card">Deborah Orange 7 Days Long Nail Polish 835</p>
+                            <p class="ms-2 fw-bold description-card">R$295.00</p>
+                        </div>
+
+                        <div class="most">
+                            <img src="http://assets.myntassets.com/v1/images/style/properties/Ponds-White-Beauty-Daily-Spot-less-Lightening-Facial-Foam_8e0d2e2a94fb5d5b20e15598389c6d0a_images.jpg" alt="Pink Bottle"
+                                class="mostreviewed-img">
+                            <div class="custom-color4">
+                                <p class="ms-2 mb-0 description-card">Ponds White Beauty Daily Spot-less Lightening Facial Foam</p>
+                                <p class="ms-2 fw-bold description-card">R$145.00</p>
+                            </div>
+                        </div>
+                        
+                    <div class="most">
+                        <img src="http://assets.myntassets.com/v1/images/style/properties/Lakme-Women-Compact_11b79b26de0e58c619c05b19acda9aaa_images.jpg" alt="Gold Bottle"
+                            class="mostreviewed-img">
+                        <div class="custom-color4">
+                            <p class="ms-2 mb-0 description-card">Lakme Compact Puff</p>
+                            <p class="ms-2 fw-bold description-card">RS$ 90.00
+
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+        
+                </div>
+                <div class="border border-2 border-secondary mt-3">
+
+                    <div class="custom-color4">
+                        <p class="fs-6 mb-0">Quer receber notícias da nossa loja? Deixe seu email!</p>
+                        <input type="email" name="email" id="email" class="input-news mt-3" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        <input type="button" value="Envie!" class="mt-3 description-card btn-purple">
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="row">
+            <div class="col">
+                <p class="custom-color2">Formas de pagamento</p>
+                <div class="d-flex flex-column">
+                    <p  class="custom-color2">Apenas no PIX!</p>
+                </div>
+            </div>
+        
+            <div class="col">
+                <p class="custom-color2">Nos siga nas redes sociais!</p>
+
+                <div class="custom-color2">
+                    <div class="icones">
+                        <i class="bi bi-instagram"></i>  @sabrinaskin
+                        <i class="bi bi-twitter"></i> @sabrinaskin
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <p class="custom-color2">Meus dados:
+                    <p class="custom-color2">Sabrina Helena Ferreira</p>
+                    <p class="custom-color2">Engenharia de Computação</p>
+                    <p class="custom-color2">Matrícula 797535</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
