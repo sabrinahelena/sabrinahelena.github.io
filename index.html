@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/6bd401535f.js" crossorigin="anonymous"></script>
-    <title>Sabrina's SKIN</title>
+    <title>Sabrina's Care</title>
 </head>
 
 <body>
@@ -20,14 +20,35 @@
         <div class="container-fluid">
             <div class="container-fluid">
                 <div class="row">
-                    <p id="nome" class="fs-2 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7" style="color: #3E4E50; font-family: Brush Script MT, Brush Script Std, cursive;" ><br>Sabrina's skin</p>
+                    <p id="nome" class="fs-2 col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7" style="color: #3E4E50; font-family: Brush Script MT, Brush Script Std, cursive;" ><br>Sabrina's care</p>
                 </div>
             </div>
         </div>
     </nav>
     <section class="container-fluid">
         <div class="row ms-1 me-1">
-
+            
+            <aside class="lh-1 p-3 col-lg-3 col-md-4 col-sm-12 xsQuick"
+                style="background-color: #8789C0 !important; text-align: center; margin: auto; border-radius: 10%;">
+                <p class="fs-6 fw-bold text-white" style="text-align: center;">Pesquisa Rápida</p>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Skin Care')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Skin care</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Hair')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Cabelo</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Makeup')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Maquiagem</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Lips')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Lábios</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Nails')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Unhas</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Perfumes')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Perfumes</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Eyes')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Olhos</button>
+                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Bath and Body')"
+                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Banho e corpo</button>
+            </aside>
+    
             <div id="carouselExample" class="carousel slide col-lg-9 col-md-8 col-sm-12">
                 <div class="carousel-inner">
                     <div class="carousel-item active w-100">
@@ -52,28 +73,6 @@
                 </button>
             </div>
 
-            
-            <aside class="lh-1 p-3 col-lg-3 col-md-4 col-sm-12 xsQuick"
-                style="background-color: #8789C0 !important; text-align: center; margin: auto; border-radius: 10%;">
-                <p class="fs-6 fw-bold text-white" style="text-align: center;">Pesquisa Rápida</p>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Skin Care')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Skin care</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Hair')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Cabelo</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Makeup')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Maquiagem</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Lips')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Lábios</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Nails')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Unhas</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Perfumes')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Perfumes</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Eyes')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Olhos</button>
-                <button class="btn btn-outline-primary btn-sm m-1 text-white" onclick="retornaPesquisa('Personal Care - Bath and Body')"
-                    style="cursor: pointer; border-color: #F4FAFF; border-radius: 10px;">Banho e corpo</button>
-            </aside>
-    
         </div>
     </section>
     <div id="searchResultsTittle"></div>
@@ -82,12 +81,6 @@
     </div>
     <section class="container-fluid">
         <div class="row me-3">
-            <div class="xsBottles col-md-9 col-lg-9">
-                <h1 class="custom-color" style="font-family: Brush Script MT, Brush Script Std, cursive;">Produtos disponíveis</h1>
-                <div id="exibeProdutos" class="d-flex flex-wrap">
-
-                </div>
-            </div>
             <div class="col-md-3 col-lg-3 h-25 xsMostReviwed">
                 
                 <div class="border border-2 border-secondary mt-3">
@@ -138,6 +131,13 @@
                         <input type="email" name="email" id="email" class="input-news mt-3" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                         <input type="button" value="Envie!" class="mt-3 description-card btn-purple">
                       </div>
+                </div>
+            </div>
+
+            <div class="xsBottles col-md-9 col-lg-9">
+                <h1 class="custom-color" style="font-family: Brush Script MT, Brush Script Std, cursive;">Produtos disponíveis</h1>
+                <div id="exibeProdutos" class="d-flex flex-wrap">
+
                 </div>
             </div>
         </div>
